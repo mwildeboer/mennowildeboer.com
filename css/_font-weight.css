@@ -1,0 +1,15 @@
+.fw3    { font-weight: 300; }
+.fw4    { font-weight: 400; }
+.fw6    { font-weight: 600; }
+
+@media (--breakpoint-medium) {
+  .fw3-m    { font-weight: 300; }
+  .fw4-m    { font-weight: 400; }
+  .fw6-m    { font-weight: 600; }
+}
+
+@media (--breakpoint-large) {
+  .fw3-l    { font-weight: 300; }
+  .fw4-l    { font-weight: 400; }
+  .fw6-l    { font-weight: 600; }
+}

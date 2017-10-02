@@ -1,0 +1,18 @@
+.lh-solid { line-height: 1; }
+.lh-title { line-height: 1.25; }
+.lh-headline { line-height: 1.4; }
+.lh-copy  { line-height: 1.5; }
+
+@media (--breakpoint-medium) {
+  .lh-solid-m { line-height: 1; }
+  .lh-title-m { line-height: 1.25; }
+  .lh-headline-m { line-height: 1.4; }
+  .lh-copy-m  { line-height: 1.5; }
+}
+
+@media (--breakpoint-large) {
+  .lh-solid-l { line-height: 1; }
+  .lh-title-l { line-height: 1.25; }
+  .lh-headline-l { line-height: 1.4; }
+  .lh-copy-l  { line-height: 1.5; }
+}

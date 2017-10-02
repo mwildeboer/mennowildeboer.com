@@ -1,0 +1,31 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pressdoc/homepage.git",
+  "author": "Menno Wildeboer <ome.menno@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "npm run build && eb deploy",
+    "build:css": "postcss css/index.css > public/index.css",
+    "watch:css": "npm-run-all --parallel browser:sync watch:postcss",
+    "build:postcss": "tachyons ./css/index.css > ./public/index.css",
+    "watch:postcss": "watch 'postcss css/index.css > public/index.css' ./css/ --interval=0.1",
+    "browser:sync": "browser-sync start --server --serveStatic 'public' --files 'public' --no-open --no-ui"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "cssnano": "^3.10.0",
+    "npm-run-all": "^4.0.1",
+    "postcss": "^6.0.12",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-reporter": "^5.0.0",
+    "postcss-url": "^7.1.2",
+    "watch": "^1.0.1"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
