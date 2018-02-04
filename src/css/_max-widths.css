@@ -1,12 +1,12 @@
-.mw  { max-width: 60rem; }
+.mw  { max-width: 64rem; }
 .mw-copy { max-width: 42rem; }
 
 @media (--breakpoint-medium) {
-  .mw-m  { max-width: 60rem; }
+  .mw-m  { max-width: 64rem; }
   .mw-copy-m { max-width: 42rem; }
 }
 
 @media (--breakpoint-large) {
-  .mw-l  { max-width: 60rem; }
+  .mw-l  { max-width: 64rem; }
   .mw-copy-l { max-width: 42rem; }
 }

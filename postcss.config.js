@@ -1,8 +1,11 @@
 module.exports = (ctx) => ({
-  map: ctx.options.map,
+  map: false,
   plugins: {
     'postcss-import': { root: ctx.file.dirname },
-    'postcss-cssnext': {},
-    'cssnano': ctx.env === 'production' ? {} : false
+    'postcss-css-variables': {},
+    'postcss-custom-media': {},
+    'autoprefixer': {},
+    'css-mqpacker': {},
+    'cssnano': ctx.env === 'production' ? { "sourcemap": false, "discardComments": {"removeAll": true} }  : false
   }
 })
