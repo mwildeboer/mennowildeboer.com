@@ -1,0 +1,7 @@
+
+:root {
+  --gradient-golang: linear-gradient(180deg, #4BA59D, #50A8DB);
+  --gradient-ruby: radial-gradient(#FFF, #BBB);
+  --gradient-swift: linear-gradient(145deg, #F1B257, #ec4937);
+  --gradient-sketch: radial-gradient(#5B2E7F, #1C0E39);
+}

@@ -1,0 +1,33 @@
+.h3 { height: 3px; }
+
+.h-100 {
+  height: 100%;
+}
+
+@each $size in var(--sizes) {
+  .h$(size) { height: $(size)px; }
+}
+
+@media (--breakpoint-not-small) {
+  .h3-ns { height: 3px; }
+
+  @each $size in var(--sizes) {
+    .h$(size)-ns { height: $(size)px; }
+  }
+}
+
+@media (--breakpoint-medium) {
+  .h3-m { height: 3px; }
+
+  @each $size in var(--sizes) {
+    .h$(size)-m { height: $(size)px; }
+  }
+}
+
+@media (--breakpoint-large) {
+  .h3-l { height: 3px; }
+
+  @each $size in var(--sizes) {
+    .h$(size)-l { height: $(size)px; }
+  }
+}

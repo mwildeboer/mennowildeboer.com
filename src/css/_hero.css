@@ -1,0 +1,21 @@
+.hero {
+  padding: 48px 0;
+}
+
+@media screen and (min-width: 21em) and (max-width: 30em) {
+  .hero {
+    padding: 96px 0;
+  }
+}
+
+@media (--breakpoint-medium) {
+  .hero {
+    padding: 144px 0;
+  }
+}
+
+@media (--breakpoint-large) {
+  .hero {
+    padding: 196px 0;
+  }
+}

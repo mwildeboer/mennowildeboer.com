@@ -1,0 +1,21 @@
+.tracked       { letter-spacing:  .1em; }
+.tracked-tight { letter-spacing: -.0125em; }
+.tracked-mega  { letter-spacing:  .25em; }
+
+@media (--breakpoint-not-small) {
+  .tracked-ns       { letter-spacing:  .1em; }
+  .tracked-tight-ns { letter-spacing: -.0125em; }
+  .tracked-mega-ns  { letter-spacing:  .25em; }
+}
+
+@media (--breakpoint-medium) {
+  .tracked-m       { letter-spacing:  .1em; }
+  .tracked-tight-m { letter-spacing: -.0125em; }
+  .tracked-mega-m  { letter-spacing:  .25em; }
+}
+
+@media (--breakpoint-large) {
+  .tracked-l       { letter-spacing:  .1em; }
+  .tracked-tight-l { letter-spacing: -.0125em; }
+  .tracked-mega-l  { letter-spacing:  .25em; }
+}

@@ -1,0 +1,5 @@
+.hover-bg-blue:focus, .hover-bg-blue:hover { background-color: var(--blue); }
+.hover-bg-blue:focus, .hover-bg-blue:hover { background-color: var(--blue); }
+
+.hover-bg-dark-blue:focus, .hover-bg-dark-blue:hover { background-color: var(--dark-blue); }
+.hover-bg-dark-blue:focus, .hover-bg-dark-blue:hover { background-color: var(--dark-blue); }

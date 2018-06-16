@@ -1,27 +1,25 @@
 const webpack = require('webpack');
 const { resolve, join } = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   context: resolve(__dirname, 'src'),
   entry: {
     app: [
-      'webpack-dev-server/client?http://localhost:8080',
       './index.html',
       './css/index.css',
     ],
   },
-  output: {
-    filename: '[name].js',
-    chunkFilename: '[name].js',
-    path: resolve(__dirname, 'public'),
-    publicPath: "/"
-  },
   devServer: {
+    host: '0.0.0.0',
     hot: true,
     noInfo: false,
-    quiet: false
+    quiet: false,
+  },
+  optimization: {
+    namedModules: true,
+    noEmitOnErrors: true
   },
   module: {
     rules: [
@@ -47,7 +45,8 @@ module.exports = {
         exclude: '/node_modules/'
       },
       {
-        test: /\.(jpe?g|png|gif|ico)$/i, loader: "file-loader?name=[name].[ext]"
+        test: /\.(jpe?g|png|gif|ico)$/i,
+        loader: "file-loader?name=[name].[ext]"
       }
     ],
   },
@@ -56,7 +55,5 @@ module.exports = {
       template: 'index.html'
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
   ]
 }

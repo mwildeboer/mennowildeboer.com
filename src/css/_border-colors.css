@@ -18,6 +18,10 @@
 
 */
 
-.b--dark-gray {
-   border-color: #343434;
+.b--silver {
+   border-color: #e4e4e4;
+}
+
+.b--light-gray {
+   border-color: #EEE;
 }
