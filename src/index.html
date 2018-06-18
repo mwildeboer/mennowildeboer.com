@@ -468,7 +468,10 @@
                     </div>
                     <div class="dtc pl16 pl24-ns v-mid">
                         <h4 class="f16 f18-ns fw6 lh-title mh0 mt0 mb4 mb8-ns pa0">Design</h4>
-                        <p class="f13 f15-ns fw4 lh-copy ma0 mw-copy gray pa0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="f13 f15-ns fw4 lh-copy ma0 mw-copy gray pa0">I started with
+                            <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="bb bw2 b--light-gray link black">Photoshop</a> as a hobby and now use
+                            <a href="https://www.sketchapp.com/" target="_blank" class="bb bw2 b--light-gray link black">Sketch</a> on a daily basis for user interfaces. Keen on doing design research.
+                        </p>
                     </div>
                 </li>
             </ul>
@@ -566,12 +569,12 @@
         </section>
         <section class="center mw pv48 pv64-ns w-100">
             <h3 class="f21 f24-ns fw6 lh-title mh0 mt0 mb4 mb8-ns mw-copy black pa0">Let's get in touch</h3>
-            <p class="f16 f18-ns fw4 lh-copy mh0 mt0 mb16 mb20-ns mw-copy gray pa0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="bg-blue hover-bg-dark-blue bg-animate br-pill dib f16 fw5 mh0 mt0 mb24 link pv16 ph24 tracked-tight white">Contact me</a>
+            <p class="f16 f18-ns fw4 lh-copy mh0 mt0 mb16 mb20-ns mw-copy gray pa0">Have a cool idea or just wanna talk about tech? Let's grab a coffee or beer! Please note that I ignore any sorts of recruitment emails. Nothing personal.</p>
+            <a href="#" id="button" class="bg-blue hover-bg-dark-blue bg-animate br-pill dib f16 fw5 mh0 mt0 mb24 link pv16 ph24 tracked-tight white">Contact me</a>
         </section>
         <footer class="bt b--silver center dt f0 mw pv12 pv16-m w-100">
             <div class="dtc f0 w-50 v-mid">
-                <p class="near-black f12 f14-ns fw4 lh-copy ma0">Build with <a href="http://tachyons.io/" target="_blank" class="gray bb bw2 b--light-gray link">Tachyons</a>, <a href="https://webpack.js.org/" target="_blank" class="gray bb bw2 b--light-gray link">Webpack</a> and <a href="https://postcss.org/" target="_blank" class="gray bb bw2 b--light-gray link">PostCSS</a>. This page is <a href="" target="_blank" class="gray bb bw2 b--light-gray link">here</a></p>
+                <p class="near-black f12 f14-ns fw4 lh-copy ma0">Powered by <a href="http://tachyons.io/" target="_blank" class="gray bb bw2 b--light-gray link">Tachyons</a>, <a href="https://webpack.js.org/" target="_blank" class="gray bb bw2 b--light-gray link">Webpack</a> and <a href="https://postcss.org/" target="_blank" class="gray bb bw2 b--light-gray link">PostCSS</a>. Code is <a href="https://github.com/mwildeboer/mennowildeboer.com" target="_blank" class="gray bb bw2 b--light-gray link">here</a></p>
             </div>
             <div class="dtc f0 w-50 tr v-mid">
                 <a href="https://www.linkedin.com/in/mennowildeboer" title="LinkedIn" aria-label="LinkedIn" target="_blank" class="linkedin-blue link mr12 mr16-ns">
@@ -597,5 +600,19 @@
                 </a>
             </div>
         </footer>
+        <script type="text/javascript">
+            var m = ["m","o","c",".","l","i","a","m","g","@","o","n","n","e","m",".","e","m","o"];
+            var t = [":","o","t","l","i","a","m"];
+
+            var b = document.getElementById("button");
+            var f = function(e) {
+                e.stopPropagation();
+                e.preventDefault();
+                window.location.href = t.reverse().join('') + m.reverse().join('');
+            }
+
+            b.addEventListener("touchend", f)
+            b.addEventListener("click", f)
+        </script>
     </body>
 </html>

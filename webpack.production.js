@@ -3,6 +3,7 @@ const { resolve, join } = require('path');
 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -45,7 +46,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|ico)$/i,
-        loader: "file-loader?name=/images/[name].[hash:7].[ext]",
+        loader: "file-loader?name=images/[name].[hash:7].[ext]",
       }
     ],
   },
@@ -53,8 +54,9 @@ module.exports = {
     new CleanWebpackPlugin([ "public" ], { verbose: false }),
     new HtmlWebpackPlugin({
       template: 'index.html',
-      inject: false
+      excludeAssets: [/app.*.js/]
     }),
+    new HtmlWebpackExcludeAssetsPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].[hash].css",
       chunkFilename: "[id].[hash].css"
