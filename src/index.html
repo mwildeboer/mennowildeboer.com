@@ -601,14 +601,14 @@
             </div>
         </footer>
         <script type="text/javascript">
-            var m = ["m","o","c",".","l","i","a","m","g","@","o","n","n","e","m",".","e","m","o"];
-            var t = [":","o","t","l","i","a","m"];
-
+            var m = "znvygb:bzr.zraab@tznvy.pbz"
             var b = document.getElementById("button");
             var f = function(e) {
                 e.stopPropagation();
                 e.preventDefault();
-                window.location.href = t.reverse().join('') + m.reverse().join('');
+                window.location.href = m.replace(/[a-zA-Z]/g, function(c){
+                    return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);
+                })
             }
 
             b.addEventListener("touchend", f)
