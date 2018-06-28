@@ -47,6 +47,10 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif|ico)$/i,
         loader: "file-loader?name=images/[name].[hash:7].[ext]",
+      },
+      {
+        test: /\.(txt|xml)$/i,
+        loader: "file-loader?name=[name].[ext]",
       }
     ],
   },
