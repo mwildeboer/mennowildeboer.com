@@ -1,7 +1,5 @@
-const webpack = require('webpack');
-const { resolve, join } = require('path');
-
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { resolve } = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -55,7 +53,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin([ "public" ], { verbose: false }),
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: "public/**/*", verbose: false }),
     new HtmlWebpackPlugin({
       template: 'index.html',
       excludeAssets: [/app.*.js/]

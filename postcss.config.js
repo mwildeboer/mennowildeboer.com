@@ -7,7 +7,7 @@ module.exports = (ctx) => ({
     'postcss-custom-properties': { preserve: false },
     'postcss-custom-media': {},
     'autoprefixer': {},
-    'css-mqpacker': {},
+    '@lipemat/css-mqpacker': {},
     'cssnano': ctx.env === 'production' ? { "sourcemap": false, "discardComments": { "removeAll": true } } : false
   }
 })

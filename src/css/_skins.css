@@ -17,6 +17,7 @@
 .silver { color: var(--silver); }
 .near-white { color: var(--near-white);  }
 .white { color: var(--white); }
+.whitest { color: var(--white); }
 .blue { color: var(--blue); }
 
 .linkedin-blue { color: var(--linkedin-blue); }
@@ -29,14 +30,46 @@
 .bg-silver { background-color: var(--silver); }
 .bg-near-white { background-color: var(--near-white);  }
 .bg-white { background-color: var(--white); }
+.bg-whitest { background-color: var(--white); }
 .bg-blue { background-color: var(--blue); }
 
+.bg-typescript { background: var(--typescript-blue); }
 .bg-react-black { background: var(--react-black);  }
 .bg-node-gray { background: var(--node-gray);  }
 .bg-postgres-blue { background: var(--postgres-blue);  }
 .bg-vue-green { background: var(--vue-green);  }
+.bg-php-black { background: var(--php-black); }
 
 .bg-gradient-golang { background: var(--gradient-golang);  }
 .bg-gradient-ruby { background: var(--gradient-ruby);  }
 .bg-gradient-swift { background: var(--gradient-swift);  }
 .bg-gradient-sketch { background: var(--gradient-sketch);  }
+.bg-gradient-php { background: var(--gradient-php); }
+
+.bg-fill-white {
+   position: relative;
+}
+
+.bg-fill-white:before {
+   background-color: white;
+   content: "";
+   position: absolute;
+   top: 3px;
+   left: 3px;
+   right: 3px;
+   bottom: 3px;
+   z-index: -1;
+}
+
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+   .bg-black { background-color: var(--white); }
+   .bg-white { background-color: black }
+
+   .black { color: var(--white); }
+   .white { color: black }
+   .silver { color: var(--light-silver); }
+   .gray { color: var(--light-silver); }
+}

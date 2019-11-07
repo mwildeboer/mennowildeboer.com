@@ -25,3 +25,14 @@
 .b--light-gray {
    border-color: #EEE;
 }
+
+
+@media (prefers-color-scheme: dark) {
+   .b--silver {
+      border-color: #292929;
+   }
+
+   .b--light-gray {
+      border-color: #444;
+   }
+}
