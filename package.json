@@ -26,7 +26,7 @@
     "expose-loader": "0.7.5",
     "file-loader": "4.2.0",
     "html-loader": "0.5.5",
-    "html-webpack-plugin": "3.2.0",
+    "html-webpack-plugin": "5.5.0",
     "mini-css-extract-plugin": "0.8.0",
     "postcss": "7.0.21",
     "postcss-at-rules-variables": "0.1.9",
